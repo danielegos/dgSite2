@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Daniel Gallegos</title>
+		<style>
+			body{
+				/* overscroll-behavior: none; */
+				font-family: "Garamond";
+				color:#111
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#container{
+				width: 100vw;
+				height: 100vh;
+				border: 0px solid #f00;
+				/* overflow: hidden; */
+			}
+			canvas{
+				display: block;
+			}
+			.curtain{
+				width: 25%;				
+				right: 0px;
+				position: absolute;
+				height: 100%;
+				background: white;
+				z-index: 100;
+				mix-blend-mode: difference;
+				/* overflow: hidden;			 */
+				transition: height .01s ease; /* Smooth transition */			
+			}
+			.curtain_body{
+				width: 75%;
+				position: fixed;
+				height: 100%;
+				background: white;
+				/*mix-blend-mode: difference;*/
+				z-index: 100;
+				/* overflow: hidden;	 */
+				transition: height .01s ease; /* Smooth transition */	
+			
+			}
+			h1 {
+				font-family: 'Garamond', sans-serif;
+				padding: 50px;
+			}
+			.right-aligned {
+				text-align: right;
+				font-family: 'Garamond', sans-serif;
+				padding-right:50px;
+			}
+			a {
+            color: black; /* Default color */
+            text-decoration: none; /* Underline by default */
+			}
+
+			/* Style for the link when hovered */
+			a:hover {
+				color: blue; /* Change color on hover */
+				text-decoration: none; /* Remove underline on hover */
+			}
+
+			/* Style for the link when visited */
+			a:visited {
+				color: none; /* Change color after clicking */
+			}
+
+			/* Optional: Remove underline on hover */
+			a:focus {
+				outline: none; /* Optional: Remove outline on focus */
+			}
+
+			header h1 {
+            margin: 0;
+			}
+			.container {
+				width: 80%;
+				margin: 0 auto;
+				padding: 0em;
+			}
+			h2 {
+				color: #4CAF50;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			li {
+				margin-bottom: 10px;
+			}
+			.contact-info a {
+				text-decoration: none;
+				color: #4CAF50;
+			}
+			.skills, .education, .experience {
+				margin-top: 20px;
+			}
+			footer {
+				text-align: center;
+				padding: 1em;
+				background-color: #fff;
+				color: #111;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="curtain">
+			<h1><a href="index.html">Daniel Gallegos</h1>
+			<!--<h2 class="right-aligned"><a href="projects.html">Projects</a></h2>-->
+			<h2 class="right-aligned"><a href="about.html">About Me</a></h2>
+			<!-- <h2 class="right-aligned"><a href="education.html">Education</a></h2> -->
+
+		</div>
+		<div class="curtain_body">
+			<header>
+				<h1>About Me</h1>
+			</header>
+		
+			<div class="container">
+				<section class="bio">
+					<h2>Summary</h2>
+					<p>
+						I am an Adjunct Faculty member at Biola University with expertise in 
+						computational biology and philosophy of science. I have experience 
+						in academia and industry, specializing in regulatory affairs and data 
+						science. I'm passionate about public speaking, research, and healthcare 
+						innovation.
+					</p>
+				</section><br>
+		
+				<section class="contact-info">
+					<h2>Contact and Portfolio Links</h2>
+					<ul>
+						<li>Email: <a href="mailto:daniel@danielgallegos.me">daniel@danielgallegos.me</a></li>
+						<li>LinkedIn: <a href="https://www.linkedin.com/in/-daniel-gallegos/" target="_blank">https://www.linkedin.com/in/-daniel-gallegos/</a></li>
+						<li>GitHub: <a href="https://github.com/danielegos" target="_blank">https://github.com/danielegos</a></li>
+						<li>YouTube: <a href="https://www.youtube.com/@daniel.gallegos" target="_blank">https://www.youtube.com/@daniel.gallegos</a></li>
+					</ul>
+				</section>
+		
+				<section class="skills">
+					<h2>Top Skills</h2>
+					<ul>
+						<li>Research • Software Projects • Public Speaking</li>
+					</ul>
+				</section>				
+				
+		
+				<section class="experience">
+					<h2>Experience</h2>
+					<p><strong>Biola University</strong><br>
+					Adjunct Faculty, Department of Biological Sciences (January 2024 - Present)<br>
+					</p>
+					<p><strong>Pac-Dent, Inc.</strong><br>
+					Regulatory Affairs Specialist (February 2024 - June 2024)<br>
+					</p>
+					<p><strong>23andMe</strong><br>
+					Regulatory Affairs Coordinator (May 2022 - June 2023)<br>
+					</p>
+				</section>
+		
+				<section class="education">
+					<h2>Education</h2>
+					<ul>
+						<li>Master of Science - Computer Science, University of Texas at Austin (2025 - 2027)</li>
+						<li>Master of Arts - Science and Religion, Biola University (2020 - 2025)</li>
+						<li>Bachelor of Science - Computer Science, Western Governors University (2023 - 2025)</li>
+						<li>Bachelor of Science - Biology, Western Washington University (2016 - 2019)</li>
+					</ul>
+				</section>
+
+				<br>
+				<p>&copy; 2025 Daniel Gallegos</p>
+
+			</div>
+		
+			<footer>
+				<!-- <p>&copy; 2025 Daniel Gallegos</p> -->
+			</footer>
+		</div>
+		<div id="container"></div>
+		<!--
+		<script>
+			document.addEventListener('mousemove', function(event) {
+			  // Get the mouse Y position relative to the viewport
+			  const mouseY = event.clientY;
+		
+			  // Set the curtain height based on mouse Y position (from 0 to 100%)
+			  const curtain = document.querySelector('.curtain');
+			  curtain.style.height = mouseY + 'px'; // Adjust curtain height
+			});
+		  </script>
+		-->
+		<script type="module">
+			import * as THREE from './nodemodules/three/build/three.module.js';
+			import { OrbitControls } from './nodemodules/three/examples/jsm/controls/OrbitControls.js';
+			import { GLTFLoader } from './nodemodules/three/examples/jsm/loaders/GLTFLoader.js';
+			import { GPUComputationRenderer } from './nodemodules/three/examples/jsm/Addons.js';
+
+
+			import fragment from "./shader/fragment.glsl"
+			import fragmentSimulation from "./shader/fragmentSimulation.glsl"
+			import vertex from "./shader/vertexParticles.glsl"
+			import * as dat from "./nodemodules/dat.gui";
+			import gsap from "./nodemodules/gsap";
+			import face from './brain4.glb';
+
+			// Texture width determines particles
+			const WIDTH = 128;
+
+
+
+			export default class Sketch{
+				constructor(options){      
+					this.scene = new THREE.Scene();
+
+					this.container = options.dom;
+					this.width = this.container.offsetWidth;
+					this.height = this.container.offsetHeight;
+					this.renderer = new THREE.WebGLRenderer();
+					this.renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+					this.renderer.setSize( this.width, this.height );
+					this.renderer.setClearColor(0xeeeeee,1);
+					this.renderer.outputEncoding = THREE.sRGBEncoding;
+
+					this.container.appendChild(this.renderer.domElement);
+					this.loader = new GLTFLoader();
+
+					this.camera = new THREE.PerspectiveCamera(
+						70,
+						window.innerWidth / window.innerHeight,
+						0.001,
+						1000
+					)
+
+					
+					this.camera.position.set(0,0,2);
+					this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+					this.time = 0;
+
+					this.loader.load(face,(gltf)=>{
+						console.log(gltf.scene.children[0].children[0].children[0].children[0].children[0].children[0]);
+						
+						this.model = gltf.scene.children[0].children[0].children[0].children[0].children[0].children[0];
+						this.model.geometry.scale(.02,.02,.02);
+						this.model.geometry.translate(0,-.5,0);
+						this.model.geometry.rotateY(-Math.PI/2);
+						
+
+						this.facePos = this.model.geometry.attributes.position.array;
+						this.faceNumber = this.facePos.length/3;
+						console.log(this.facePos);
+
+						this.isPlaying = true;    
+						this.initGPGPU();    
+						this.addObjects();
+						this.resize();
+						this.render();
+						this.setupResize();
+
+
+					})
+
+
+
+				}
+
+				initGPGPU() {
+					this.gpuCompute = new GPUComputationRenderer(WIDTH,WIDTH,this.renderer);
+					this.dtPosition = this.gpuCompute.createTexture();
+					//console.log(this.dtPosition);
+					this.fillPositions(this.dtPosition);
+
+					this.positionVariable = this.gpuCompute.addVariable('texturePosition',
+						fragmentSimulation, this.dtPosition);
+
+					//console.log(this.gpuCompute)
+
+					this.positionVariable.material.uniforms['time'] = {value: 0};
+
+					this.positionVariable.wrapS = THREE.RepeatWrapping;
+					this.positionVariable.wrapT = THREE.RepeatWrapping;
+					this.gpuCompute.init();
+
+				}
+
+				fillPositions(texture) {
+					let arr = texture.image.data;
+					for (let i = 0; i < arr.length; i=i+4) {
+
+						let rand = Math.floor(Math.random()*this.faceNumber)
+						// let x = Math.random();
+						// let y = Math.random();
+						// let z = Math.random();
+
+						let x = this.facePos[3*rand];
+						let y = this.facePos[3*rand+1];
+						let z = this.facePos[3*rand+2];
+
+						arr[i] = x;
+						arr[i+1] = y;
+						arr[i+2] = z;
+						arr[i+3] = 1;
+
+					}
+				}
+
+				settings() {
+					let that = this;
+					this.settings = {
+						progress: 0,
+					};
+					this.gui = new dat.GUI();
+					this.gui.add(this.settings, "progress", 0,1,0.01);
+				}
+
+				setupResize() {
+					window.addEventListener("resize", this.resize.bind(this));
+				}
+
+				resize() {
+					this.width = this.container.offsetWidth;
+					this.height = this.container.offsetHeight;
+					this.renderer.setSize(this.width, this.height);
+					this.camera.aspect = this.width / this.height;
+
+					
+
+					this.camera.updateProjectionMatrix();
+				}
+
+
+				addObjects() {
+					let that = this;
+					this.material = new THREE.ShaderMaterial({
+						extensions: {
+							derivatives: "#extension GL_OES_standard_derivatives : enable"
+						},
+						side: THREE.DoubleSide,
+						uniforms: {
+							time: {value: 0 },
+							positionTexture: { value: null },
+							resolution: {value: new THREE.Vector4()},
+						},
+						vertexShader: vertex,
+						fragmentShader: fragment
+					});
+
+					this.geometry = new THREE.BufferGeometry();
+					let positions = new Float32Array(WIDTH*WIDTH*3);
+					let reference = new Float32Array(WIDTH*WIDTH*2);
+					for (let i = 0; i < WIDTH*WIDTH; i++) {
+						let x = Math.random();
+						let y = Math.random();
+						let z = Math.random();
+						let xx = (i%WIDTH)/WIDTH;
+						let yy = ~~(i/WIDTH)/WIDTH;
+						positions.set([x,y,z],i*3)
+						reference.set([xx,yy],i*2)
+					}
+
+					this.geometry.setAttribute('position', 
+						new THREE.BufferAttribute(positions,3))
+					this.geometry.setAttribute('reference', 
+						new THREE.BufferAttribute(reference,2))
+					
+					// Use brain model:
+					// this.geometry = this.model.geometry;
+
+					// Use sphere:
+					// this.geometry = new THREE.IcosahedronGeometry(1.,136);
+
+					// Use box:
+					// this.geometry = new THREE.BoxGeometry(1.3,1.3,1.3,80.,80.,80.);
+					// this.geometry.rotateY(-Math.PI/4);
+
+					// Use torus
+					this.geometry = new THREE.TorusGeometry(.8,0.4,300,600,Math.PI*2);
+					this.geometry.rotateX(Math.PI/1.5);
+					this.geometry.translate(1.5,-0.2,0);
+					this.plane = new THREE.Points(this.geometry, this.material);
+					this.scene.add(this.plane)
+				}
+
+				stop() {
+					this.isPlaying = false;
+
+				}
+
+				play() {
+					if(!this.isPlaying) {
+						this.render()
+						this.isPlaying = true;
+					}
+				}
+
+
+				render() {
+					if(!this.isPlaying) return;
+					this.time += 0.05;
+
+					this.positionVariable.material.uniforms['time'].value = this.time;
+
+					this.gpuCompute.compute();
+					this.material.uniforms.positionTexture.value = this.gpuCompute.getCurrentRenderTarget(
+						this.positionVariable).texture;
+
+					this.material.uniforms.time.value = this.time;
+
+					
+					requestAnimationFrame(this.render.bind(this));
+					this.renderer.render(this.scene, this.camera);
+				}    
+			}
+
+			new Sketch({
+				dom: document.getElementById("container")
+			});
+
+
+				
+
+		</script>
+	</body>
+</html>>

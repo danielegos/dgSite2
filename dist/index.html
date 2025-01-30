@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Daniel Gallegos</title>
+		<style>
+			body{
+				/* overscroll-behavior: none; */
+				font-family: "Garamond";
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#container{
+				width: 100vw;
+				height: 100vh;
+				border: 0px solid #f00;	
+				overflow: hidden;
+			}
+			canvas{
+				display: block;
+			}
+			.curtain{
+				width: 100%;
+				position: fixed;
+				height: 50%;
+				background: white;
+				z-index: 100;
+				mix-blend-mode: difference;
+				overflow: hidden;	
+				transition: height .01s ease; /* Smooth transition */			
+			}
+			h1 {
+				font-family: 'Garamond', sans-serif;
+				padding: 50px;
+			}
+			.right-aligned {
+				text-align: right;
+				font-family: 'Garamond', sans-serif;
+				padding-right:50px;
+			}
+			a {
+            color: black; /* Default color */
+            text-decoration: none; /* Underline by default */
+			}
+
+			/* Style for the link when hovered */
+			a:hover {
+				color: blue; /* Change color on hover */
+				text-decoration: none; /* Remove underline on hover */
+			}
+
+			/* Style for the link when visited */
+			a:visited {
+				color: none; /* Change color after clicking */
+			}
+
+			/* Optional: Remove underline on hover */
+			a:focus {
+				outline: none; /* Optional: Remove outline on focus */
+			}
+			
+		</style>
+		<script type="module" crossorigin src="/assets/index-AIiyU1Ft.js"></script>
+	</head>
+	<body>
+		<div class="curtain">
+			<h1><a href="index.html">Daniel Gallegos</h1>
+			<!--<h2 class="right-aligned"><a href="projects.html">Projects</a></h2>-->
+			<h2 class="right-aligned"><a href="about.html">About Me</a></h2>
+			<!--<h2 class="right-aligned"><a href="education.html">Education</a></h2>-->
+
+		</div>
+		<div id="container"></div>
+		<!--
+		<script>
+			document.addEventListener('mousemove', function(event) {
+			  // Get the mouse Y position relative to the viewport
+			  const mouseY = event.clientY;
+		
+			  // Set the curtain height based on mouse Y position (from 0 to 100%)
+			  const curtain = document.querySelector('.curtain');
+			  curtain.style.height = mouseY + 'px'; // Adjust curtain height
+			});
+		  </script>
+		-->
+	</body>
+</html>>

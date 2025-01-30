@@ -1,0 +1,58 @@
+{
+  "hash": "3f85eeb7",
+  "configHash": "ad72a33d",
+  "lockfileHash": "f923df62",
+  "browserHash": "cf0f12c5",
+  "optimized": {
+    "dat.gui": {
+      "src": "../../dat.gui/build/dat.gui.module.js",
+      "file": "dat__gui.js",
+      "fileHash": "370434f7",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "8bc76dc5",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "90381103",
+      "needsInterop": false
+    },
+    "three/examples/jsm/Addons.js": {
+      "src": "../../three/examples/jsm/Addons.js",
+      "file": "three_examples_jsm_Addons__js.js",
+      "fileHash": "5818e2b7",
+      "needsInterop": false
+    },
+    "three/examples/jsm/controls/OrbitControls.js": {
+      "src": "../../three/examples/jsm/controls/OrbitControls.js",
+      "file": "three_examples_jsm_controls_OrbitControls__js.js",
+      "fileHash": "28935d0e",
+      "needsInterop": false
+    },
+    "three/examples/jsm/loaders/GLTFLoader.js": {
+      "src": "../../three/examples/jsm/loaders/GLTFLoader.js",
+      "file": "three_examples_jsm_loaders_GLTFLoader__js.js",
+      "fileHash": "2b7c4373",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-STG4KX6Q": {
+      "file": "chunk-STG4KX6Q.js"
+    },
+    "chunk-YWFOBWHX": {
+      "file": "chunk-YWFOBWHX.js"
+    },
+    "chunk-Z437FIQO": {
+      "file": "chunk-Z437FIQO.js"
+    },
+    "chunk-PZ5AY32C": {
+      "file": "chunk-PZ5AY32C.js"
+    }
+  }
+} 
