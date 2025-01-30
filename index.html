@@ -63,8 +63,7 @@
 			}
 			
 		</style>
-		<script type="text/javascript" src="./nodemodules/dat.gui/build/dat.gui.min.js"></script>
-
+		<script type="text/javascript" src="./nodemodules/dat.gui/build/dat.gui.js"></script>
 	</head>
 	<body>
 		<div class="curtain">
@@ -393,7 +392,9 @@
 			// import fragment from "./shader/fragment.glsl"
 			// import fragmentSimulation from "./shader/fragmentSimulation.glsl"
 			// import vertex from "./shader/vertexParticles.glsl"
-			import * as dat from "./nodemodules/dat.gui";
+
+			// import * as dat from "./nodemodules/dat.gui";
+
 			// import gsap from "./nodemodules/gsap";
 			import face from './brain4.glb';
 
@@ -502,7 +503,7 @@
 					this.settings = {
 						progress: 0,
 					};
-					this.gui = new dat.GUI();
+					this.gui = new dat.gui.GUI();
 					this.gui.add(this.settings, "progress", 0,1,0.01);
 				}
 
