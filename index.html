@@ -396,7 +396,8 @@
 			// import * as dat from "./nodemodules/dat.gui";
 
 			// import gsap from "./nodemodules/gsap";
-			import face from './brain4.glb';
+			
+			// import face from './brain4.glb';
 
 			// Texture width determines particles
 			const WIDTH = 128;
@@ -431,7 +432,7 @@
 					this.controls = new OrbitControls(this.camera, this.renderer.domElement);
 					this.time = 0;
 
-					this.loader.load(face,(gltf)=>{
+					this.loader.load("brain4.glb",(gltf)=>{
 						console.log(gltf.scene.children[0].children[0].children[0].children[0].children[0].children[0]);
 						
 						this.model = gltf.scene.children[0].children[0].children[0].children[0].children[0].children[0];
